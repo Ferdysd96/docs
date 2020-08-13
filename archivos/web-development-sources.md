@@ -22,6 +22,7 @@
 ## FUENTES
 
 - https://fonts.google.com/
+- https://www.dafont.com/es/
 - https://www.1001freefonts.com
 - https://www.conversordeletras.com/
 
@@ -30,6 +31,7 @@
 - https://purecss.io/
 - https://getbootstrap.com/
 - https://bootswatch.com
+- https://materializecss.com/
 - https://daneden.github.io/animate.css/
 
 ## COLORES

@@ -2,7 +2,7 @@
 
 - [Angular](https://github.com/Ferdysd96/docs/blob/master/archivos/angular.md)
 - [Git](https://github.com/Ferdysd96/docs/blob/master/archivos/git.md)
-- [Web Development Resource](https://github.com/Ferdysd96/docs/blob/master/archivos/web-development-sources.md)
+- [Web Development Resources](https://github.com/Ferdysd96/docs/blob/master/archivos/web-development-sources.md)
 - [Clean code](https://github.com/ryanmcdermott/clean-code-javascript)
 - [Laravel](https://github.com/Ferdysd96/docs/blob/master/archivos/laravel.md)
 - [Linux](https://github.com/Ferdysd96/docs/blob/master/archivos/linux.md)

@@ -14,7 +14,7 @@
 
 ```bash
  #POSTGRES 12
- $ https://remot-technologies.com/como-instalar-postgresql-12-ubuntu-18-04/
+  https://remot-technologies.com/como-instalar-postgresql-12-ubuntu-18-04/
  
  
 ```

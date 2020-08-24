@@ -18,5 +18,9 @@
   - https://remot-technologies.com/como-instalar-postgresql-12-ubuntu-18-04/
   
   #PGADMIN4
-  sudo nano /etc/apt/sources.list.d/pgdg.list
+  ```bash
+  $ sudo nano /etc/apt/sources.list.d/pgdg.list
+  
+  #Guardar
   deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main
+  ```

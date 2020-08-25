@@ -23,6 +23,9 @@
   
   #Guardar
   deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main
+  
+  $ sudo apt update
+  $sudo apt install pgadmin4
   ```
   #Node
   

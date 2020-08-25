@@ -24,3 +24,6 @@
   #Guardar
   deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main
   ```
+  #Node
+  
+  - https://github.com/nodesource/distributions

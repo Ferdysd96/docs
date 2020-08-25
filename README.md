@@ -12,6 +12,6 @@
 - [React](https://github.com/Ferdysd96/docs/blob/master/archivos/react.md)
 - [Sequelize](https://github.com/Ferdysd96/docs/blob/master/archivos/sequelize.md)
 - [HTML](https://github.com/danipv54/HTML-Dominicana)
-
+- [public apis](https://github.com/public-apis/public-apis)
 ---
 Por [ferdysd96](https://github.com/ferdysd96) 😊

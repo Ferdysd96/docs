@@ -121,5 +121,5 @@
   #cada que hagas uso de esta.
   
   # Agregar nuestra clave SSH al SSH-Agent
-  $ $(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa     
+  $ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa    
  ``` 

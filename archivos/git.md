@@ -124,7 +124,7 @@
   $ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa    
  ``` 
  
- ## FIJAR CREDENCIALES (LINUX
+ ## FIJAR CREDENCIALES (LINUX)
 ```bash
 #Establecer tiempo
 git config --global credential.helper 'cache --timeout 3600'

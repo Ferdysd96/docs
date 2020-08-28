@@ -126,9 +126,9 @@
  
  ## FIJAR CREDENCIALES (LINUX)
 ```bash
-#Establecer tiempo
-git config --global credential.helper 'cache --timeout 3600'
+  #Establecer tiempo
+  $ git config --global credential.helper 'cache --timeout 3600'
 
-#Ayuda
-git help credential-cache
+  #Ayuda
+  $ git help credential-cache
 ```

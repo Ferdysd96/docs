@@ -56,6 +56,9 @@ $ ng g m name  --routing
 #  Crear Componentes
 $ ng g c nombre 
 
+# Crear Guards
+$ ng g guard name
+
 ## Desplegar                    
 
 $ ng build --prod                                

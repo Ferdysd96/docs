@@ -41,7 +41,7 @@
 # Crear nuevo proyecto 
  $ ng new name --routing    
 
- # Iniciar el proyecto  
+ # Iniciar el proyecto 
  $ ng serve 
 
 # Crear Servicio
@@ -54,7 +54,7 @@ $ ng g s name
 $ ng g m name  --routing                           
 
 #  Crear Componentes
-$ ng g c nombre 
+$ ng g c name 
 
 # Crear Guards
 $ ng g guard name

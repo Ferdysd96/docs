@@ -11,14 +11,13 @@
 ```
 
 ## REPOSITRIOS / LINKS
-
-
- #POSTGRES 12
-
-  - https://remot-technologies.com/como-instalar-postgresql-12-ubuntu-18-04/
   
   #PGADMIN4
   ```bash
+  #Importar LLave
+  echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee /etc/apt/sources.list.d/pgdg.list
+  
+  #Crear archivo
   $ sudo nano /etc/apt/sources.list.d/pgdg.list
   
   #Guardar
@@ -27,6 +26,10 @@
   $ sudo apt update
   $ sudo apt install pgadmin4
   ```
+   #POSTGRES 12
+
+  - https://remot-technologies.com/como-instalar-postgresql-12-ubuntu-18-04/
+  
   #Node
   
   - https://github.com/nodesource/distributions

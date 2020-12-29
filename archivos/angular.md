@@ -4,11 +4,11 @@
 ## ACTUALIZAR NPM   
 
 ``` bash
-# Actualizar nmp
+ # Actualizar nmp
  $ npm install -g npm@latest 
 
  # Limpiar la cahe de npm 
-  $ npm cache clean --force
+ $ npm cache clean --force
 
  # Desactivar las auditorias para evitar fallos
  $ npm set audit false
@@ -38,28 +38,27 @@
 ## ANGULAR CLI 
 
 ``` bash
-# Crear nuevo proyecto 
+ # Crear nuevo proyecto 
  $ ng new name --routing    
 
  # Iniciar el proyecto 
  $ ng serve 
 
-# Crear Servicio
-$ ng g s name          
+ # Crear Servicio
+ $ ng g s name          
 
-# Crear Pipe 
+ # Crear Pipe 
  $ ng g p name
                                                                                             
-# Crear Modulos                         
-$ ng g m name  --routing                           
+ # Crear Modulos                         
+ $ ng g m name  --routing                           
 
-#  Crear Componentes
-$ ng g c name 
+ # Crear Componentes
+ $ ng g c name 
 
-# Crear Guards
-$ ng g guard name
+ # Crear Guards
+ $ ng g guard name
 
-## Desplegar                    
-
-$ ng build --prod                                
+ ## Desplegar                    
+ $ ng build --prod                                
   ```

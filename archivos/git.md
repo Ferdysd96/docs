@@ -80,7 +80,7 @@
   # Viajar al commit
   $ git checkout my-key
   
-  # Volverl al ultimo commit 
+  # Volverl al último commit 
   $ git checkout master            
 ``` 
 
@@ -118,7 +118,7 @@
   # Unir ramas
   $ git merge master
   
-  # Borrar ramas
+  # Borrar rama
   $ git branch new-branch -d 
   ``` 
   

@@ -4,7 +4,7 @@
 
 ``` bash
   # Asignar nombre
-  $ git config --global user.name "Ferdys"
+  $ git config --global user.name "your-name"
   
   # ver nombre
   $ git config --global user.name
@@ -14,7 +14,7 @@
 
 ``` bash
   # Asignar correo
-  $ git config --global user.email "ferdysd96@gmail.com"
+  $ git config --global user.email "youremail@gmail.com"
   
   # Ver correo
   $ git config --global user.email
@@ -24,26 +24,28 @@
  
 ``` bash
  # Clonar un repositorio
- $ git clone mylink    
+ $ git clone link-del-repositotio.com    
  
  # Conectar con nuestro repositorio
- $ git remote add origin myLink
+ $ git remote add origin link-del-repositotio.com   
   
   # Comprobar la conexion
  $ git remote -v  
  
  # Push para subir los commists
- $ git push -u origin myRama
+ $ git push -u origin new-branch
+ $ git push
  
  # Cambiar url
  $ git remote set-url origin myLink 
  
  # Forzar el push (OJO) Solo sube tus commist y borra los demas 
- $ git push origin myRama --force 
+ $ git push origin new-branch --force 
  $ git push -f
   
  # Integrar nuevos cambios
- $ git pull origin master           
+ $ git pull origin master --rebase
+ $ git pull rebase
 ``` 
 
 ## ARCHIVOS
@@ -56,14 +58,14 @@
   $ git status 
   
   # Agregar un archivo
-  $ git add myFile 
+  $ git add my-file 
   
   # Agregar todos los archivos
   $ git add -A
   $ git add .
   
   # Remover archivo
-  $ git rm --cached myFile      
+  $ git rm --cached my-file      
 ``` 
 
 ## COMMITS
@@ -76,7 +78,7 @@
   $ git log  
   
   # Viajar al commit
-  $ git checkout myKey
+  $ git checkout my-Key
   
   # Volverl al ultimo commit 
   $ git checkout master            
@@ -86,10 +88,10 @@
 
 ``` bash
   # Borra despues de ese commit y nos deja el codigo
-  $ git reset -- soft myKey
+  $ git reset -- soft my-Key
   
   # Borra despues de ese commit y borra todo el codigo (OJO)
-  $ git reset -- hard myKey      
+  $ git reset -- hard my-Key      
  ``` 
  
 ## RAMAS
@@ -99,25 +101,25 @@
   $ git branch 
   
   # Crear nueva rama
-  $ git branch myRama
+  $ git branch new-branch
   
   # Cambiar de rama
-  $ git checkout myRama
+  $ git checkout new-branch
   
   # Crear nueva rama y cambiar a rama creada
-  $ git checkout -b myrama
+  $ git checkout -b new-branch
    
   # Renombrar rama
   $ git branch -m new-name
   
-  # Agregar cambios de una rama a otra
-  git rebase master
+  # Agregar cambios de una rama a otra (Preferiblemente antes que el merge)
+  $ git rebase master
   
   # Unir ramas
   $ git merge master
   
   # Borrar ramas
-  $ git branch myRama -d 
+  $ git branch new-branch -d 
   ``` 
   
   ## KEY SSH

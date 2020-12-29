@@ -24,10 +24,10 @@
  
 ``` bash
  # Clonar un repositorio
- $ git clone link-del-repositotio.com    
+ $ git clone repository-link.com    
  
  # Conectar con nuestro repositorio
- $ git remote add origin link-del-repositotio.com   
+ $ git remote add origin repository-link.com   
   
   # Comprobar la conexion
  $ git remote -v  
@@ -37,7 +37,7 @@
  $ git push
  
  # Cambiar url
- $ git remote set-url origin myLink 
+ $ git remote set-url origin repository-link.com 
  
  # Forzar el push (OJO) Solo sube tus commist y borra los demas 
  $ git push origin new-branch --force 

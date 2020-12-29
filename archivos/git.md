@@ -46,6 +46,9 @@
  # Integrar nuevos cambios
  $ git pull origin master --rebase
  $ git pull --rebase
+ 
+ #Borrar rama remota 
+ git push -d origin new-branch
 ``` 
 
 ## ARCHIVOS

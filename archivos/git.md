@@ -45,7 +45,7 @@
   
  # Integrar nuevos cambios
  $ git pull origin master --rebase
- $ git pull rebase
+ $ git pull --rebase
 ``` 
 
 ## ARCHIVOS

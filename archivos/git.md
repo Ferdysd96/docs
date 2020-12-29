@@ -40,6 +40,7 @@
  
  # Forzar el push (OJO) Solo sube tus commist y borra los demas 
  $ git push origin myRama --force 
+ $ git push -f
   
  # Integrar nuevos cambios
  $ git pull origin master           
@@ -59,6 +60,7 @@
   
   # Agregar todos los archivos
   $ git add -A
+  $ git add .
   
   # Remover archivo
   $ git rm --cached myFile      
@@ -102,8 +104,17 @@
   # Cambiar de rama
   $ git checkout myRama
   
-   # Unir ramas
-  $ git merge myRama
+  # Crear nueva rama y cambiar a rama creada
+  $ git checkout -b myrama
+   
+  # Renombrar rama
+  $ git branch -m new-name
+  
+  # Agregar cambios de una rama a otra
+  git rebase master
+  
+  # Unir ramas
+  $ git merge master
   
   # Borrar ramas
   $ git branch myRama -d 

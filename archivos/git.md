@@ -32,7 +32,7 @@
   # Comprobar la conexion
  $ git remote -v  
  
- # Push para subir los commists
+ # Push para subir los commits
  $ git push -u origin new-branch
  $ git push
  
@@ -78,7 +78,7 @@
   $ git log  
   
   # Viajar al commit
-  $ git checkout my-Key
+  $ git checkout my-key
   
   # Volverl al ultimo commit 
   $ git checkout master            
@@ -88,10 +88,10 @@
 
 ``` bash
   # Borra despues de ese commit y nos deja el codigo
-  $ git reset -- soft my-Key
+  $ git reset -- soft my-key
   
   # Borra despues de ese commit y borra todo el codigo (OJO)
-  $ git reset -- hard my-Key      
+  $ git reset -- hard my-key      
  ``` 
  
 ## RAMAS
@@ -127,11 +127,11 @@
 ``` bash
   # Crear la key
   $ ssh-keygen -t rsa -b 4096 -C your_email@example.com
-  
-  #Ahora te preguntara si deseas que la clave SSH se guarde en ese
-  #directorio, das enter y después te pedirá contraseña,
-  #es recomendable no poner para que no tengas que escribirla 
-  #cada que hagas uso de esta.
+   
+   <!-- Ahora te preguntara si deseas que la clave SSH se guarde en ese
+   directorio, das enter y después te pedirá contraseña,
+   es recomendable no poner para que no tengas que escribirla 
+   cada que hagas uso de esta. -->
   
   # Agregar nuestra clave SSH al SSH-Agent
   $ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa    
@@ -139,6 +139,7 @@
  
  ## FIJAR CREDENCIALES (LINUX)
 ```bash
+  # Establecer un asistente de credenciales en la configuración de git
   $ git config --global credential.helper store
   
   #Establecer tiempo

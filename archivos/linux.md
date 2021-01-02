@@ -35,7 +35,7 @@
   $ sudo -u postgres psql
   
   #Cambiar clave
-  $ alter user postgres with password 'hello123'
+  $ alter user postgres with password 'hello123';
   ```
   
   #Node

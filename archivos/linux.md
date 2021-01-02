@@ -30,8 +30,8 @@
 
   - https://remot-technologies.com/como-instalar-postgresql-12-ubuntu-18-04/
   
-  ```
-  # Entrar a postgres
+  ```bash
+  #Entrar a postgres
   $ sudo -u postgres psql
   
   #Cambiar clave

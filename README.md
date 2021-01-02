@@ -9,7 +9,6 @@
 - [Laravel](https://github.com/Ferdysd96/docs/blob/master/archivos/laravel.md)
 - [Linux](https://github.com/Ferdysd96/docs/blob/master/archivos/linux.md)
 - [PM2](https://github.com/Ferdysd96/docs/blob/master/archivos/pm2.md)
-- [React](https://github.com/Ferdysd96/docs/blob/master/archivos/react.md)
 - [Sequelize](https://github.com/Ferdysd96/docs/blob/master/archivos/sequelize.md)
 - [HTML](https://github.com/danipv54/HTML-Dominicana)
 - [Public apis](https://github.com/public-apis/public-apis)

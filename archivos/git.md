@@ -112,7 +112,7 @@
   # Crear nueva rama y cambiar a rama creada
   $ git checkout -b new-branch
    
-  # Renombrar rama
+  # Renombrar rama actual
   $ git branch -m new-name
   
   # Agregar cambios de una rama a otra (Preferiblemente antes que el merge)

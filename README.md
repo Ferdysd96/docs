@@ -1,6 +1,7 @@
 ## Documentación 📌
 
 - [Angular](https://github.com/Ferdysd96/docs/blob/master/archivos/angular.md)
+- [Capacitor](https://github.com/Ferdysd96/docs/blob/master/archivos/capacitor.md)
 - [Git](https://github.com/Ferdysd96/docs/blob/master/archivos/git.md)
 - [Web Development Resources](https://github.com/Ferdysd96/docs/blob/master/archivos/web-development-sources.md)
 - [Clean code](https://github.com/ryanmcdermott/clean-code-javascript)

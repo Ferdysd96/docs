@@ -16,6 +16,9 @@
    
  # Add Plataform
  $ npx cap add android
+ 
+ # Copy Plataform
+ $ npx cap copy android
 
  # Open Plataform
  $  npx cap open android  

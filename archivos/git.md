@@ -137,7 +137,16 @@
    cada que hagas uso de esta. -->
   
   # Agregar nuestra clave SSH al SSH-Agent
-  $ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa    
+  $ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa  
+
+  # Ver tu clave pública
+  $ cat ~/.ssh/id_rsa.pub 
+  
+ <!-- Ahora Debes dirigirte a github/gitlab etc y agregar con tu clave pública el ssh -->
+
+  # Probar tu conexion 
+  $ ssh -T git@bitbucket.org 
+   
  ``` 
  
  ## FIJAR CREDENCIALES (LINUX)

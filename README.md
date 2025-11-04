@@ -11,5 +11,6 @@
 - [PM2](https://github.com/Ferdysd96/docs/blob/master/archivos/pm2.md)
 - [HTML](https://github.com/danipv54/HTML-Dominicana)
 - [Public apis](https://github.com/public-apis/public-apis)
+- [Auth Guide](https://github.com/Ferdysd96/docs/blob/master/archivos/SECURITY_GUIDELINES.md)
 ---
 Por [ferdysd96](https://github.com/ferdysd96) 😊

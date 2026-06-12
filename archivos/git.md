@@ -129,20 +129,20 @@
 
 ``` bash
   # Crear la key
-  $ ssh-keygen -t rsa -b 4096 -C your_email@example.com
+  $ ssh-keygen -t ed25519 -C "tu_correo@ejemplo.com"
    
-   <!-- Ahora te preguntara si deseas que la clave SSH se guarde en ese
-   directorio, das enter y después te pedirá contraseña,
-   es recomendable no poner para que no tengas que escribirla 
-   cada que hagas uso de esta. -->
+   # Presiona Enter para aceptar la ubicación por defecto: C:\Users\TU_USUARIO\.ssh\id_ed25519
+   # Puedes dejar la contraseña vacía si no quieres introducirla cada vez. (DAR ENTER)
   
   # Agregar nuestra clave SSH al SSH-Agent
-  $ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa  
+  $ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519  
 
   # Ver tu clave pública
-  $ cat ~/.ssh/id_rsa.pub 
+  $ cat ~/.ssh/id_ed25519.pub 
   
  <!-- Ahora Debes dirigirte a github/gitlab etc y agregar con tu clave pública el ssh -->
+
+ # Agregar tu clave publica https://bitbucket.org/account/settings/ssh-keys/
 
   # Probar tu conexion 
   $ ssh -T git@bitbucket.org 

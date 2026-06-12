@@ -146,7 +146,9 @@
 
   # Probar tu conexion 
   $ ssh -T git@bitbucket.org 
-   
+
+  # Si anteriormente tenías configurado el repositorio usando HTTPS, actualiza la URL remota para utilizar SSH
+  $ git remote set-url origin <SSH_REMOTE_URL>
  ``` 
  
  ## FIJAR CREDENCIALES (LINUX)

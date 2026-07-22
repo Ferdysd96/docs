@@ -127,7 +127,6 @@
   
   ## KEY SSH
 
-``` bash
 # Configurar una clave SSH para Bitbucket (Windows - PowerShell)
 
 ## 1. Generar una nueva clave SSH
@@ -257,24 +256,7 @@ Deberías ver una salida similar a:
 ```text
 origin  git@bitbucket.org:USUARIO/REPOSITORIO.git (fetch)
 origin  git@bitbucket.org:USUARIO/REPOSITORIO.git (push)
-```
-
----
-
-## 8. Verificar que Git funciona correctamente
-
-```powershell
-git fetch
-```
-
-o
-
-```powershell
-git pull
-```
-
-Si no solicita usuario ni contraseña, la configuración SSH se realizó correctamente.
- ``` 
+``` 
  
  ## FIJAR CREDENCIALES (LINUX)
 ```bash

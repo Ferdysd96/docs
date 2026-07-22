@@ -128,27 +128,152 @@
   ## KEY SSH
 
 ``` bash
-  # Crear la key
-  $ ssh-keygen -t ed25519 -C "tu_correo@ejemplo.com"
-   
-   # Presiona Enter para aceptar la ubicación por defecto: C:\Users\TU_USUARIO\.ssh\id_ed25519
-   # Puedes dejar la contraseña vacía si no quieres introducirla cada vez. (DAR ENTER)
-  
-  # Agregar nuestra clave SSH al SSH-Agent
-  $ eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519  
+# Configurar una clave SSH para Bitbucket (Windows - PowerShell)
 
-  # Ver tu clave pública
-  $ cat ~/.ssh/id_ed25519.pub 
-  
- <!-- Ahora Debes dirigirte a github/gitlab etc y agregar con tu clave pública el ssh -->
+## 1. Generar una nueva clave SSH
 
- # Agregar tu clave publica https://bitbucket.org/account/settings/ssh-keys/
+```powershell
+ssh-keygen -t ed25519 -C "tu_correo@ejemplo.com"
+```
 
-  # Probar tu conexion 
-  $ ssh -T git@bitbucket.org 
+Cuando aparezca el siguiente mensaje:
 
-  # Si anteriormente tenías configurado el repositorio usando HTTPS, actualiza la URL remota para utilizar SSH
-  $ git remote set-url origin <SSH_REMOTE_URL>
+```text
+Enter file in which to save the key (C:\Users\TU_USUARIO\.ssh\id_ed25519):
+```
+
+Presiona **Enter** para utilizar la ubicación predeterminada.
+
+Cuando solicite una contraseña (passphrase):
+
+- Presiona **Enter** si no deseas utilizar una contraseña.
+- O escribe una contraseña para mayor seguridad.
+
+---
+
+## 2. Iniciar el servicio SSH Agent
+
+> **Importante:** Ejecuta PowerShell como **Administrador**.
+
+Configura el servicio para que inicie automáticamente y luego inícialo:
+
+```powershell
+Set-Service -Name ssh-agent -StartupType Automatic
+Start-Service ssh-agent
+```
+
+> Si el servicio ya está iniciado, puedes omitir este paso.
+
+---
+
+## 3. Agregar la clave al SSH Agent
+
+```powershell
+ssh-add "$env:USERPROFILE\.ssh\id_ed25519"
+```
+
+Verifica que la clave fue agregada correctamente:
+
+```powershell
+ssh-add -l
+```
+
+---
+
+## 4. Mostrar la clave pública
+
+```powershell
+Get-Content "$env:USERPROFILE\.ssh\id_ed25519.pub"
+```
+
+Copia todo el contenido que comienza con:
+
+```text
+ssh-ed25519 AAAA...
+```
+
+---
+
+## 5. Agregar la clave a Bitbucket
+
+Ingresa a:
+
+https://bitbucket.org/account/settings/ssh-keys/
+
+Haz clic en **Add key** y pega la clave pública copiada en el paso anterior.
+
+---
+
+## 6. Probar la conexión
+
+```powershell
+ssh -T git@bitbucket.org
+```
+
+La primera vez aparecerá un mensaje similar a:
+
+```text
+The authenticity of host 'bitbucket.org' can't be established.
+ED25519 key fingerprint is...
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Escribe:
+
+```text
+yes
+```
+
+Si la autenticación fue exitosa, verás un mensaje similar a:
+
+```text
+authenticated via ssh key.
+```
+
+---
+
+## 7. Cambiar el repositorio de HTTPS a SSH (si aplica)
+
+Verifica la URL actual del repositorio:
+
+```powershell
+git remote -v
+```
+
+Si la URL comienza con `https://`, cámbiala por la URL SSH:
+
+```powershell
+git remote set-url origin git@bitbucket.org:USUARIO/REPOSITORIO.git
+```
+
+Verifica el cambio:
+
+```powershell
+git remote -v
+```
+
+Deberías ver una salida similar a:
+
+```text
+origin  git@bitbucket.org:USUARIO/REPOSITORIO.git (fetch)
+origin  git@bitbucket.org:USUARIO/REPOSITORIO.git (push)
+```
+
+---
+
+## 8. Verificar que Git funciona correctamente
+
+```powershell
+git fetch
+```
+
+o
+
+```powershell
+git pull
+```
+
+Si no solicita usuario ni contraseña, la configuración SSH se realizó correctamente.
  ``` 
  
  ## FIJAR CREDENCIALES (LINUX)
